@@ -6,10 +6,9 @@ attr_accessor :doctor, :patient, :appointment, :date
 def initialize(patient, date, doctor)
   @date = date
   @patient = patient
-
   @doctor = doctor
   @@all << self
-  # binding.pry
+  binding.pry
 end
 # def date=(date)
 #   @date = date.chomp
