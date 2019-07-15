@@ -10,10 +10,9 @@ def initialize(date, patient, doctor)
 end
 def patient=(patient)
   @patient = patient
-  end
-
+end
 def patient
-  self.patient
+  @patient
 end
 
 def self.all
