@@ -1,9 +1,25 @@
 class Doctor
-attr_accessor :patient, :appointment, :name
+attr_accessor :patient, :appointment, :name, :date
 @@all = []
 
+def initialize(name)
+  @name = name
+  @@all << name
+end
+
+def new_appointment(date, patient)
+  Appointment.new(date, patient, self)
+end
+
+def patients
+  Appointment.all.collect do |patient|
+    appointment.patient if patient.doctor == self
+  end
+end
+
 def self.all
-  @@all? { | |  }
+  @@all
+end
 
 
 end
