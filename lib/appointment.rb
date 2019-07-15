@@ -11,6 +11,8 @@ def initialize(date.as_a(str), patient, doctor)
 end
 def date=(date)
   @date = date
+end
+
 
 def self.all
   @@all
