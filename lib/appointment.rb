@@ -3,7 +3,7 @@ attr_accessor :doctor, :patient, :appointment,
 @@all = []
 
 def initialize(date, patient, doctor)
-  date = date
+  @date = date
   @patient = Patient.new(patient)
 
   @doctor = doctor
