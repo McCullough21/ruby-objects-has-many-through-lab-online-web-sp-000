@@ -1,3 +1,4 @@
+require 'pry'
 class Patient
 attr_accessor :name, :appointment, :doctor
 @@all = []
@@ -23,6 +24,7 @@ def doctors
       end
   end
 end
+binding.pry
 
 def self.all
   @@all
