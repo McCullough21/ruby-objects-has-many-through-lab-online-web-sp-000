@@ -10,7 +10,7 @@ end
 def new_appointment(date, doctor)
   @date = date.to_str
   @doctor = doctor
-  Appointment.new(@date, self, doctor)
+  Appointment.new(@date, self, @doctor)
 end
 
 def self.all
