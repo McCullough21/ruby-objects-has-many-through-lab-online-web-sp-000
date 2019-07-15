@@ -14,7 +14,7 @@ end
 def patients
   Appointment.all.collect do |appointment|
     if appointment.doctor == self
-      patient
+      appointment.patient
     end
    end
 end
