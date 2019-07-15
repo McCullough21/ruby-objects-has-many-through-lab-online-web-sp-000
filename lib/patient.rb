@@ -8,11 +8,11 @@ def initialize(name)
 end
 
 def new_appointment(doctor, date)
-  Appointment.new(date, doctor, self)
+  Appointment.new(date, self, doctor)
 end
 
-def self.all
-  @@all
+def self.all 
+  @@all 
 end
 
 end
