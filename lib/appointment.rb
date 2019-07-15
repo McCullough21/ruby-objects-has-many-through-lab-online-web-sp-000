@@ -1,3 +1,4 @@
+require 'pry'
 class Appointment
 attr_accessor :doctor, :patient, :appointment
 @@all = []
@@ -8,6 +9,7 @@ def initialize(date, patient, doctor)
 
   @doctor = doctor
   @@all << self
+  binding.pry
 end
 # def date=(date)
 #   @date = date.chomp
