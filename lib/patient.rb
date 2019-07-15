@@ -17,7 +17,7 @@ def appointments
   end
 end
 def doctors
-  Appointment.all.collect do |appointment|
+  Appointment.all.select do |appointment|
     self.doctor
   end
 end
