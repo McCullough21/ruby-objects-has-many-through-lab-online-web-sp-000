@@ -4,7 +4,7 @@ attr_reader :date
 @@all = []
 
 def initialize(date.as_a(str), patient, doctor)
-  @date = date.chomp
+  @date = date
   @patient = patient
   @doctor = doctor
   @@all << self
