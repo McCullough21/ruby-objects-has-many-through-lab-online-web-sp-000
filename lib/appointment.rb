@@ -11,7 +11,7 @@ end
 # def date=(date)
 #   @date = date.chomp
 # end
-# 
+#
 
 def self.all
   @@all
