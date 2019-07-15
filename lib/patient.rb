@@ -19,7 +19,7 @@ def appointments
 end
 def doctors
    Appointment.all.collect do |appointment|
-      if appointment.patient == self
+      if appointment.patient.name == self
         appointment.doctor
         # appointment.date
       binding.pry
