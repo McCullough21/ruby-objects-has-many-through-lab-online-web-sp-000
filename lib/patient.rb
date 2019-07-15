@@ -8,7 +8,8 @@ def initialize(name)
 end
 
 def new_appointment(date, doctor)
-  Appointment.new(date, self, doctor)
+  @date = date.to_str
+  Appointment.new(@date, self, doctor)
 end
 
 def self.all
