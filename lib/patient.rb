@@ -17,9 +17,10 @@ def appointments
   end
 end
 def doctors
-  self.appointments.collect do |appointment|
-      appointment.doctor
-
+   Appointments.all.collect do |appointment|
+      if appointment.patient == self
+        appointment.doctor
+      end
   end
 end
 
