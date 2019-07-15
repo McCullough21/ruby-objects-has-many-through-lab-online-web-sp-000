@@ -21,10 +21,11 @@ def doctors
    Appointment.all.collect do |appointment|
       if appointment.patient == self
         appointment.doctor
+      binding.pry
       end
   end
 end
-binding.pry
+
 
 def self.all
   @@all
