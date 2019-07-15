@@ -12,7 +12,7 @@ def new_appointment(date, doctor)
 end
 
 def appointments
-  Appointment.all.collect do |appointment|
+  Appointment.all.select do |appointment|
     appointment.patient == self
   end
 end
