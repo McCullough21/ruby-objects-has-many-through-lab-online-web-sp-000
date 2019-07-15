@@ -22,7 +22,7 @@ def doctors
       if appointment.patient == self
         appointment.doctor
         # appointment.date
-      # binding.pry
+      binding.pry
       end
   end
 end
