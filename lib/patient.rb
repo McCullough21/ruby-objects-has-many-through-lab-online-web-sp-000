@@ -7,7 +7,7 @@ def initialize(name)
   @@all << self
 end
 
-def new_appointment(date, doctor)
+def new_appointment(date, self, doctor)
   Appointment.new(date, self, doctor)
 end
 
