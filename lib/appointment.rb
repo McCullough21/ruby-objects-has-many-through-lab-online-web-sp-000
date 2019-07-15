@@ -8,7 +8,7 @@ def initialize(patient, date, doctor)
   @patient = patient
   @doctor = doctor
   @@all << self
-  binding.pry
+  # binding.pry
 end
 # def date=(date)
 #   @date = date.chomp
