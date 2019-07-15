@@ -12,12 +12,11 @@ def new_appointment(date, patient)
 end
 
 def patients
-  Appointment.all.collect do |patient|
-    if appointment.doctor == self
-      appointment.patient
-    end
-  end
+  Appointment.all.collect do |appointment|
+    appointment.patient if appointment.doctor == self
+   end
 end
+
 def appointments
   Appointment.all.collect do |appointment|
     appointment if appointment.doctor == self
