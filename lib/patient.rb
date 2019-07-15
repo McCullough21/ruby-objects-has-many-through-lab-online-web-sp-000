@@ -17,7 +17,7 @@ def appointments
   end
 end
 def doctors
-  Appointment.all.map do |appointment|
+  Appointment.all.collect do |appointment|
     if appointment.patient == self
       appointment.doctor
     end
