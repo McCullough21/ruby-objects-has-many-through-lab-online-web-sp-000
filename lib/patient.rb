@@ -8,7 +8,7 @@ def initialize(name)
 end
 
 def new_appointment(date, doctor)
-  Appointment.new(date, self, doctor)
+  Appointment.new(self, date, doctor)
 end
 
 def appointments
@@ -19,7 +19,7 @@ end
 def doctors
   Appointment.all.collect do |appointment|
       appointment.doctor
-
+  
   end
 end
 
