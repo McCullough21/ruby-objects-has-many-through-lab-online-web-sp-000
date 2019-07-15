@@ -9,6 +9,9 @@ def initialize(date, patient, doctor)
   @@all << self
 end
 
+def patient
+ @patient
+end
 
 
 
