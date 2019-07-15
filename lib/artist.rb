@@ -22,9 +22,11 @@ def genres
   Song.all.each do |song|
     if song.artist == self
       song.genre
+    binding.pry
     end
   end
 end
+
 def self.all
   @@all
 end
