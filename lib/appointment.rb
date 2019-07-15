@@ -10,7 +10,7 @@ def initialize(date.as_a(str), patient, doctor)
   @@all << self
 end
 def date=(date)
-  @date = date
+  @date = date.chomp
 end
 
 
