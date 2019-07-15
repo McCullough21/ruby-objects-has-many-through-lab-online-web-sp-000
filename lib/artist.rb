@@ -22,7 +22,7 @@ def genres
   Song.all.collect do |song|
     if song.artist == self
       song.genre
-    binding.pry
+    # binding.pry
     end
   end
 end
